@@ -47,13 +47,13 @@
 #include <inttypes.h>
 #include <avr/pgmspace.h>
 
-#ifndef angka_besar_kuru_H
-#define angka_besar_kuru_H
+#ifndef MyBigFont_H
+#define MyBigFont_H
 
-#define angka_besar_kuru_WIDTH 10
-#define angka_besar_kuru_HEIGHT 16
+#define MyBigFont_WIDTH 10
+#define MyBigFont_HEIGHT 16
 
-cont static uint8_t angka_besar_kuru[] PROGMEM = { // the name here 'MyBigFont' must be used to refer to this font
+const static uint8_t MyBigFont[] PROGMEM = { // the name here 'MyBigFont' must be used to refer to this font
     0x04, 0x90, // size     the total size of the font in bytes   = 1168 bytes
     0x0A, // width          not actually used in this case but is set to en width (width of 'n' character)
           //                but being non-zero indicates that it is a variable width font and
